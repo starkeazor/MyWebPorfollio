@@ -1,32 +1,45 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-
+header{
+    background-color:rgb(21, 19, 19);
+    padding: 15px;
+}
 .main{
     width: 100%;
-    background: linear-gradient(to top, rgba(56, 54, 54, 0.5)50%, rgba(56, 54, 54, 0.5)50%);
+    background-image: linear-gradient(rgb(246, 241, 241), rgba(227, 138, 138, 0.5));
     background-position: center;
     background-size: auto;
-    height: 90vh
+    height: 60vh
 
 }
 .mainnn{
     width: 100%;
-    background: linear-gradient(to top, rgba(56, 54, 54, 0.5)50%, rgba(56, 54, 54, 0.5)50%);
+    background-image: linear-gradient(rgb(246, 241, 241), rgba(225, 220, 220, 0.5));
     background-position: center;
     background-size: auto;
     height: 100vh
+    
 
 }
 .peri{
     width: 1130px;
-    max-width: 95%;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+.images{
+    padding: 5px;
+    clip-path: stroke-box;
+    width: 700px;
+    margin-right: 50px; width: 450px;
+}
+/*
 .images{
         width: 300px;
         max-width: 95%;
@@ -37,7 +50,7 @@
         margin-right: 50px;
         
 
-}
+}*/
 .navbar{
     width: 1200px;
     height: 75px;
@@ -51,7 +64,7 @@
 }
 
 .logo{
-    color: #ff7200;
+    color:  #a83559;
     font-size: 35px;
     font-family: Arial;
     padding-left: 20px;
@@ -63,8 +76,61 @@
     width: 400;
     float: left;
     height: 70px;
+    background: #000;
+    padding-right: 20px;
+   
+}
+/*new try for block at the left*/
+/*nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    background: white;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+/*didnt work its should change colour*/
+/*nav.hamb span{
+    display:block;
+    background: #2ecc71;
+    width: 100%;
+    height: 30px;
+    transition: .3s;
+    transition-property: transform,opacity;
+}
+ 
+nav.hamb span:nth-child(2){
+    margin: 7px 0px;
 }
 
+nav .meun{
+    list-style: none;
+
+}
+
+nav .meun li{
+    display: inline-block;
+}
+
+nav .meun li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .meun li:not(:last-child) a hover{
+    color: #2ecc71;
+    transition: .4s;
+}
+
+nav*/
+
+/*stop try*/
+ 
 ul{
     float: left;
     display: flex;
@@ -76,19 +142,20 @@ ul li{
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 ul li a{
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
 }
 
 ul li a:hover{
-    color: #ff7200;
+    color:  #f9004d;
 }
 
 .search{
@@ -102,7 +169,7 @@ ul li a:hover{
     width: 200px;
     height: 40px;
     background: transparent;
-    border: 1px solid #ff7200;
+    border: 1px solid  #f9004d;
     margin-top: 13px;
     color: #fff;
     border-right: none;
@@ -117,8 +184,8 @@ ul li a:hover{
 .btn{
     width: 100px;
     height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
+    background:  #f9004d;
+    border: 2px solid  #f9004d;
     margin-top: 13px;
     color: #fff;
     font-size: 15px;
@@ -169,7 +236,7 @@ ul li a:hover{
 .content .cn{
     width: 180px;
     height: 50px;
-    background: #ff7200;
+    background:  #f9004d;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -187,39 +254,45 @@ ul li a:hover{
     background-color: white;
 }
 .content span{
-    color: #ff7200;
+    color:  #f9004d;
     font-size: 65px;
 }
 .form{
-    width: 500px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     margin: auto;
-    display: grid;
+    display: inline-block ;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+   
+    background: linear-gradient(to top, rgba(0,0,0,0.3)50%, rgba(0,0,0,0.3)50%);
     position: -20px;
     bottom: 0px;
     left: 870px;
     border-radius: 10px;
-    padding: 25px;
+    /*changed from 100px*/
+    padding: 50px;
+
+        
+    
 }
 
 
+
 .form input{
-    width: 400px;
+    width: 350px;
     height: 35px;
     text-align: left;
     background: transparent;
-    border-bottom: 1px solid #ff7200;
-    border-top: 1px solid #ff7200;
-    border-right: 1px solid #ff7200;
-    border-left: 1px solid #ff7200;
+    border-bottom: 1px solid #f9004d;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     color: #fff;
     border-radius: 10px;
     font-size: 15px;
     letter-spacing: 1px;
-    margin-top: 30px;
+    margin-top: 15px;
     font-family: sans-serif;
 
 }
@@ -237,10 +310,10 @@ ul li a:hover{
 
 .form .textarea{
     width: 350px;
-    height: 30px;
-    margin-top: 30px;
+    height: 120px;
+    margin-top: 15px;
     background-color: #dddddd;
-    color:#ff7200;
+    color: #f9004d;
     padding: 25px;
     border-radius: 10px;
     border: 2px solid transparent;
@@ -255,21 +328,22 @@ ul li a:hover{
 }
 .textarea:hover{
     cursor: pointer;
-    background-color: bisque;
+    background-color: #e39cb3;
 }
 .textarea:focus{
     cursor: text;
     color: black;
     background-color: #dddddd;
-    border-color: #ff7200;
+    border-color:  #682c3f;
 
 }
+
 
 .form h5{
     width: 240px;
     font-family: sans-serif;
     text-align: center;
-    color: #ff7200;
+    color:  #f9004d;
     font-size: 18px;
     background-color: white;
     border-radius: 10px;
@@ -278,12 +352,12 @@ ul li a:hover{
 
 }
 .btnn{
-    width: 200px;
-    height: 30px;
+    width: 350px;
+    height: 40px;
     text-align: center;
-    background: #ff7200;
+    background:  #f9004d;
     border: none;
-    margin-top: 30px;
+    margin-top: 15px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
@@ -296,7 +370,10 @@ ul li a:hover{
     background: linear-gradient(to top, rgba(76, 68, 68, 0.5)50%, rgba(76, 68, 68, 0.5)50%);
     background-position: center;
     background-size: auto;
-    height: 90vh
+    height: 100%;
+}
+.proff{
+    background: linear-gradient(to top, rgb(246, 241, 241), rgba(225, 220, 220, 0.5));
 }
 
 .mainn{
@@ -306,42 +383,46 @@ ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    clip-path: stroke-box;
 }
 
 .about{
     width: 100%;
     
-    background-color: #191919;
-
+    background-image: linear-gradient(rgb(246, 241, 241), rgba(225, 220, 220, 0.5));
 }
 .about img{
-    width: 300px;
+    /*width: 300px;
     border-radius: 200px;
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     float: left;
+    margin-right: 50px;*/
+    clip-path:stroke-box;
+    float: left;
     margin-right: 50px;
+    width: 450px;
 }
 .about-text{
     width: 550px;
 }
 
 .about-text h2{
-    color: white;
+    color: rgb(8, 7, 7);
     font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
-    color: white;
+    color: rgb(8, 7, 7);
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
     text-transform: capitalize;
 }
 .about-text p{
-    color:  #fcfc;
+    color:  rgb(8, 7, 7);
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -357,6 +438,8 @@ button{
     padding: 13px 30px;
     border-radius: 30px;
     transition: .4s;
+    margin-bottom: 10px;
+    
 }
 button:hover{
     background-color: transparent;
@@ -366,13 +449,13 @@ button:hover{
 
 
 .service{
-    background: #101010;
+    background: linear-gradient (rgb(246, 241, 241), rgba(225, 220, 220, 0.5));
     width: 100%;
     padding: 100px 0px;
 
 }
 .title h2{
-    color: white;
+    color: rgb(81, 70, 70);
     font-size: 75px;
     width: 1130px;
     margin: 30px auto;
@@ -388,7 +471,7 @@ button:hover{
     height: 365px;
     width: 335px;
     padding: 20px 35px;
-    background: #191919;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
     border-radius: 20px;
     margin: 15px;
     position: relative;
@@ -435,6 +518,7 @@ h5{
     font-size: 30px;
     font-family: Impact;
     font-weight: bold ;
+    color: #000;
 
     
 }
@@ -519,7 +603,8 @@ h5:hover{
    position: relative;
    width: 200px;
    height: 200px;
-   display: inline-block 
+   display: inline-block;
+
 }
 .image{
     display: block;
@@ -558,12 +643,12 @@ h5:hover{
   
 
 
-
+/*form background*/
 
 .contact-me{
     width: 100%;
-    height: 290px;
-    background: #191919;
+    height: 90vh;
+    background: linear-gradient(rgb(246, 241, 241), rgba(225, 220, 220, 0.5));
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -573,10 +658,9 @@ h5:hover{
     color: white;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 25px;
 }
 .contact-me .button-two{
-    background-color: #f9004d;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     border: 2px solid transparent;
@@ -587,10 +671,10 @@ h5:hover{
 }
 .contact-me .button-two:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: transparent;
     cursor: pointer;
 }
-footer{
+/*footer{
     position: relative;
     width: 100%;
     height: 400px;
@@ -613,19 +697,30 @@ footer p:nth-child(2){
     width: 500px;
     text-align: center;
     line-height: 26px;
-}
-.social a{
+}*/
+
+/*social*/
+/*.social a{
     width:45px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f9004d;
+    background: #d56f98;
     border-radius: 50%;
     margin: 22px 10px;
     color: white;
     text-decoration: none;
     font-size: 20px;
+    list-style: none;
+}*/
+
+/*.social{
+    list-style :none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 1rem;
 }
 .social a:hover{
     transform: scale(1.3);
@@ -639,4 +734,189 @@ footer p:nth-child(2){
     text-align: center;
     line-height: 26px;
     bottom: 35px;
+}*/
+
+
+/*New footer*/
+footer{
+    background: #000;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #fff
 }
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size :14px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.social li{
+    margin: 0 10px;
+
+}
+.social a{
+    text-decoration: none;
+    color: rgb(203, 43, 43);
+}
+.social a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.social a:hover i{
+    color: aqua;
+
+}
+.end{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.end p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.end span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+/*expreince*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'montserrat', sans-serif;
+    color:aliceblue
+}
+.containerr{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    background-color: black;
+}
+
+.timeline{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+
+}
+.timeline ul{
+    list-style: none;
+
+}
+
+.timeline ul li{
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*bottom*/
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+.timeline-content h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+}
+.timeline-content p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+@media screen and (min-width: 768px){
+    .timeline::before{
+        content: ' ';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: rgb(208, 17, 17);
+        
+    }
+    .timeline ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translate(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translate(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::after{
+        content: ' ';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        top: 0;
+    }
+    .timeline ul li:nth-child(odd)::after{
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+    .timeline ul li:nth-child(even)::after{
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+    .timeline ul li:hover::after{
+        background-color: aqua;
+
+    }
+
+
+};
+    
+
